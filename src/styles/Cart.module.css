@@ -1,0 +1,66 @@
+.backdrop {
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  top: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(12, 31, 69, 0.8);
+  z-index: 999;
+}
+
+.modal{
+  min-height: 200px;
+  min-width: 500px;
+  border-radius: var(--border-radius);
+  background-color: var(--secondary-dark-200);
+  padding: 15px 20px;
+  box-shadow: 0px 4px 9px 0px rgba(21, 48, 104, 0.671);
+  max-height: 90vh;
+  overflow-y: auto;
+}
+
+.modalHeader {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 20px;
+  border-bottom: 1.5px solid #fff;
+}
+
+
+.modalHeader span{
+  cursor: pointer;
+  font-size: 0.875rem;
+}
+
+.modalBody {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+.modalBody h6{
+  font-size: 1rem;
+  margin-bottom: 0;
+}
+
+.team {
+  font-size: 0.75rem;
+  color: var(--secondary-light);
+}
+
+.cartItem{
+  display: flex;
+  justify-content: space-between;
+  line-height: 18px;
+}
+
+
+@media screen and (max-width: 767px) {
+  .modal{
+    min-width: calc(100% - 30px);
+    margin: 0 auto;
+  }
+}

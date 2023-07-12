@@ -1,0 +1,99 @@
+.topGameCard {
+  width: 406px;
+  min-height: 193px;
+  border-radius: var(--border-radius);
+  background-color: var(--secondary-dark-200);
+  margin-bottom: 12px;
+  padding: 10px 13px;
+}
+
+.topGameCardHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.topGameCardTournament {
+  display: flex;
+  gap: 8px;
+}
+
+.topGameCardTournament h6 {
+  font-size: 0.875rem;
+  font-weight: 700;
+}
+
+.topGameCardTime {
+  display: flex;
+  gap: 8px;
+  color: var(--secondary-light);
+  font-size: 0.75rem;
+  margin-top: 8px;
+}
+
+.topGameCardTeams {
+  margin-top: 8px;
+}
+
+.topGameCardTeamName {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.topGameCardTeamName p {
+  font-size: 0.875rem;
+  font-weight: 400;
+  margin-bottom: 0;
+}
+
+.topGameCardTeams .topGameCardTeamName:first-child {
+  margin-bottom: 8px;
+}
+
+.topGameBettingOptions {
+  display: flex;
+  gap: 8px;
+}
+
+.topGameBettingOptions > div {
+  flex: 1;
+  padding: 7px 12px;
+  background-color: var(--secondary-dark-500);
+  border-radius: 30px;
+  cursor: pointer;
+
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.813rem;
+  font-weight: 500;
+}
+
+.topGameBettingOptions > div.downButton {
+  flex: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.topGameBettingOptions > div.topGameSelected {
+  background-color: var(--highlight-color);
+  color: var(--secondary-dark-950);
+}
+
+.topGameOdds {
+  margin: 12px 0;
+  font-size: 0.813rem;
+}
+
+@media screen and (max-width: 992px) {
+  .topGameCard {
+    width: 47%;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .topGameCard {
+    width: 100%;
+  }
+}

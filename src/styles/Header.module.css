@@ -1,0 +1,27 @@
+.header {
+  display: flex;
+  padding: 15px;
+  justify-content: space-between;
+  margin-top: 30px;
+}
+
+.cart {
+  position: relative;
+  cursor: pointer;
+}
+
+.cart span {
+  position: absolute;
+  height: 25px;
+  width: 25px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--highlight-color);
+  color: var(--secondary-dark-950);
+  border-radius: 50%;
+  top: -2px;
+  right: -7.5px;
+  font-size: 0.925rem;
+  border: 1px solid var(--secondary-dark-400);
+}

@@ -1,0 +1,88 @@
+.highlightGameCard {
+  min-height: 240px;
+  background-image: url("../../public/img/stadium-bg.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100%;
+  border-radius: var(--border-radius);
+  border: 1px solid var(--secondary-dark-400);
+  padding: 15px;
+}
+
+.highlightGameComp {
+  display: flex;
+  align-items: center;
+}
+
+.highlightGameComp ul {
+  list-style: none;
+  display: flex;
+  gap: 32px;
+  margin-inline-start: 8px;
+}
+
+.highlightGameComp ul li {
+  position: relative;
+  font-size: 1rem;
+  font-weight: 400;
+}
+
+.highlightGameComp ul li:not(:last-child)::after {
+  content: ">";
+  position: absolute;
+  right: -20px;
+  color: var(--text-color);
+  font-weight: 600;
+}
+
+.highlightGameTeams {
+  display: flex;
+  justify-content: center;
+  font-size: 1.125rem;
+  margin-top: 36px;
+  font-weight: 700;
+  gap: 10px;
+}
+
+.highlightGameScore {
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+  margin-top: 15px;
+}
+
+.highlightGameScore span {
+  height: 42px;
+  width: 42px;
+  border-radius: 8px;
+  background-color: var(--secondary-dark-800);
+  font-size: 1.5rem;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.highlightGameBettingOptions {
+  display: flex;
+  gap: 7px;
+}
+
+.highlightGameBettingOptions > div {
+  flex: 1;
+  padding: 7.5px 9.5px;
+  background-color: rgba(5, 14, 30, 0.75);
+  border-radius: 8px;
+  margin-top: 23px;
+  cursor: pointer;
+
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.875rem;
+  font-weight: 700;
+}
+
+.highlightGameBettingOptions > div.highlightGameBetSelected {
+  background-color: var(--highlight-color);
+  color: var(--secondary-dark-950);
+}

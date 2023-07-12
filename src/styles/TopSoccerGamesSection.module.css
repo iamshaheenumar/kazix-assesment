@@ -1,0 +1,48 @@
+.topGamesSection {
+  padding: 15px;
+}
+
+.topGamesHeader {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 32px;
+}
+
+.topGamesHeader h2 {
+  font-size: 1.25rem;
+  font-weight: 700;
+}
+
+.topGamesHeaderActions {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+}
+
+.buttonPrimary {
+  background-color: var(--secondary-dark-50);
+  color: var(--text-color);
+  border: 2px solid var(--secondary-dark-200);
+  border-radius: 8px;
+  padding: 12px 16px;
+  font-weight: 700;
+  font-size: 0.75rem;
+}
+
+.buttonIcon {
+  background-color: var(--secondary-dark-200);
+  border-radius: 8px;
+  padding: 8px;
+  border-width: 0;
+  height: 32px;
+  width: 32px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.topGamesList {
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+}
